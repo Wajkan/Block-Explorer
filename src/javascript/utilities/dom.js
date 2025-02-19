@@ -94,9 +94,9 @@ export const displayBlockList = (block) => {
 export const displayChainInfo = (blocks, gasPrice) => {
   let html = `
       <div class="chainInfoContainer">
-          <h2>Total Amount of blocks: ${blocks}</h2>
-          <p>Current Gas Price: ${formatEther(gasPrice)} ETH</p>
-          <p>Last Update: ${new Date()}</p>
+          <h2>Total amount of blocks: ${blocks}</h2>
+          <p>Current gas price: ${formatEther(gasPrice)} ETH</p>
+          <p>Last update: ${new Date()}</p>
       </div>
   `;
 
