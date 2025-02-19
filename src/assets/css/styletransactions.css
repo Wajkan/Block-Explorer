@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** RESET DONE **/
+
+body {
+  background: radial-gradient(
+      circle,
+      rgb(0, 183, 255) 0%,
+      rgb(41, 38, 38) 100%
+  );
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Montserrat', 'Franklin Gothic Medium';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  /* NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR */
+  .navbar {
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* TABLE */
+#trxlist {
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: white;
+}
+
+
+#trxlist th {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+#trxlist td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#trxlist tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* WRAPPER */
+.wrapper {
+  max-width: 1200px;
+}
+
+main {
+  margin-top: 80px;
+}

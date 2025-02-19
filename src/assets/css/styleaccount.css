@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(
+        circle,
+        rgb(0, 183, 255) 0%,
+        rgb(41, 38, 38) 100%
+    );
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Montserrat', 'Franklin Gothic Medium';
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+.navbar {
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+/* FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM */
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#balanceForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#balanceForm label {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#balanceForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+#balanceForm input:focus {
+    outline: 2px solid rgb(0, 183, 255);
+    background: white;
+}
+
+#balanceForm button {
+    width: 100%;
+    padding: 12px;
+    background: rgb(0, 183, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#balanceForm button:hover {
+    background: rgb(0, 160, 223);
+}
+
+/* DISPLAY AMOUNT DISPLAY AMOUNT DISPLAY AMOUNT DISPLAY AMOUNT DISPLAY AMOUNT */
+#displayAmount {
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}

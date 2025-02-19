@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /** RESET DONE **/
+
+  body {
+    background: radial-gradient(
+        circle,
+        rgb(0, 183, 255) 0%,
+        rgb(41, 38, 38) 100%
+    );
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Montserrat', 'Franklin Gothic Medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+  #totalBlocks {
+   max-width: 800px;
+   display: flex;
+   justify-content: center;
+   margin:auto;
+   padding: 10px;
+   border-radius: 10px;
+  }
+
+  .chainInfoContainer {
+    color: white;
+    background: linear-gradient(166deg, rgba(97, 100, 255, 0.151) 0%, rgb(73, 234, 255) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .chainInfoContainer p { 
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .chainInfoContainer h2 { 
+    font-size: 3rem;
+  }
+
+
+
+  /* NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR */
+  .navbar {
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+

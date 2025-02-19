@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styleblockdetails.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <script type="module" src="../javascript/blockDetails.js" defer></script>
+    <title>Block Details</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../../index.html">Home</a>
+      <a href="./blocks.html">Blocks</a>
+      <a href="./account.html">Account</a>
+      <a href="./transaction.html">Make A Transaction</a>
+      <a href="./transactions.html">Transactions Overview</a>
+    </div>
+
+    <main>
+      <div class="wrapper">
+        <h1 class="page-title">Selected Block Overview</h1>
+        <table id="selectedBlock">
+          <tr>
+            <th>Block Number</th>
+            <th>Gas Used</th>
+            <th>Gas Limit</th>
+            <th>Mined On</th>
+            <th>Block Hash</th>
+          </tr>
+        </table>
+
+        <h1 class="page-title">Block Details</h1>
+
+        <table id="transactionDetails">
+          <tr>
+            <th>Hash</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Gas</th>
+            <th>Value</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
